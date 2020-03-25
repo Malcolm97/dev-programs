@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<title>PREJUDICE</title>
+
+	<link rel="shortcut icon" href="_/css/images/apple-touch-icon.ico" type="image/vnd.microsoft.icon">
+	<link rel="icon" href="_/css/images/apple-touch-icon.ico" type="image/vnd.microsoft.icon">
+	<link rel="apple-touch-icon" href="_/css/images/apple-touch-icon.ico"/>
+	<link rel="apple-touch-icon-precomposed" href="_/css/apple-touch-icon.ico"/>
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- custom themes go here -->
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+
+	<script src="_/js/script.js"></script>
+	<link type="text/css" rel="stylesheet" href="_/css/style.css" />
+</head>
+<body>
+<!---->
+<div data-role="page" id="pagemain" data-theme="b" data-title="PREJUDICE">
+    <div data-role="header">
+			<h1 style="color: cornflowerblue">PREJUDICE</h1>
+			<a href="#sidenav" data-icon="bars" data-iconpos="notext">notext</a>
+      <a href="#pagecart" data-icon="shop" id="checkout1" class="ui-btn-right ui-btn-icon-right">CART</a>
+    </div>
+    <div id="sidenav" data-role="panel" style="background-color: rgba(0,0,0,0.4); width= 250px; marginLeft= 250px;">
+            <ul data-role="listview">
+            <h2 style="text-align: center; color: cornflowerblue">PREJUDICE</h2>
+            <li data-icon="user"><a href="#pagelogin">LOGIN</a></li>
+            <li data-icon="home"><a href="#pagemain">HOME</a></li>
+            <br/>
+            <li data-role="list-divider" style="background-color: #717171;">CATEGORIES</li>
+	        <li data-role="collapsible" data-inset="false" data-iconpos="right">
+	           <li data-icon="tag"><a href="#pagetops">TOPS</a></li>
+	        </li>
+	        <li data-role="collapsible" data-inset="false" data-iconpos="right">
+                <li data-icon="tag"><a href="#pagebottoms">BOTTOMS</a></li>
+	        </li>
+	        <li data-role="collapsible" data-inset="false" data-iconpos="right">
+	            <li data-icon="tag"><a href="#pagesuits">SUITS</a></li>
+	        </li>
+            <li data-role="collapsible" data-inset="false" data-iconpos="right">
+	            <li data-icon="tag"><a href="#pageshoes">SHOES</a></li>
+	        </li>
+            <div data-role="footer">
+            <h2 style="color: #818181;">&copy; MALCOLM SIONI</h2>
+            </div>
+        </ul>
+		</div>
+    <div data-role="content">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">TOPS</div>
+                <a href="#pagetops">
+                <img src="images/tops/t-shirts/c16st316_nav_1_220_265.png" style="width:100%">
+                <div class="text">T-SHIRTS</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">TOPS</div>
+                <a href="#pagetops">
+                <img src="images/tops/jackets/c16cj109_blk_1_220_265.png" style="width:100%">
+                <div class="text">JACKETS</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">TOPS</div>
+                <a href="#pagetops">
+                <img src="images/tops/hoodies/c15ho100_1_220_265.png" style="width:100%">
+                <div class="text">HOODIES</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">TOPS</div>
+                <a href="#pagetops">
+                <img src="images/tops/polos/c14po305_nav_1_220_265.png" style="width:100%">
+                <div class="text">POLOS</div>
+            </div>
+            <div href="#pagetops" class="mySlides fade">
+                <div href="#pagetops" class="numbertext">BOTTOMS</div>
+                <a href="#pagebottoms">
+                <img src="images/bottoms/dress_pants/c16db101s_blk_1_220_265.png" style="width:100%"></a>
+                <div class="text">DRESS PANTS</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">BOTTOMS</div>
+                <a href="#pagebottoms">
+                <img src="images/bottoms/shorts/c14sh303_blk_1_220_265.png" style="width:100%"></a>
+                <div class="text">SHORTS</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">BOTTOMS</div>
+                <a href="#pagebottoms">
+                    <img src="images/bottoms/joggers/c15de200_dkb_1_220_265.png" style="width:100%"></a>
+                <div class="text">JOGGERS</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">SUITS</div>
+                <a href="#pagesuits">
+                <img src="images/suits/suit_jackets/c15sj304_ink_1_220_265.png" style="width:100%"></a>
+                <div class="text">SUIT JACKETS</div>
+            </div>
+            <div href="#pagetops" class="mySlides fade">
+                <div class="numbertext">SUITS</div>
+                <a href="#pagesuits">
+                <img src="images/suits/suit_pants/c13db301c_cha_1_220_265.png" style="width:100%"></a>
+                <div class="text">SUIT PANTS</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">SUITS</div>
+                <a href="#pagesuits">
+                <img src="images/suits/waistcoats/c12wc201_chr_1_220_265.png" style="width:100%"></a>
+                <div class="text">WAISTCOATS</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">SHOES</div>
+                <a href="#pageshoes">
+                <img src="images/shoes/casual_shoes/c14fwc300_nav_1_220_265.png" style="width:100%"></a>
+                <div class="text">CASUAL SHOES</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">SHOES</div>
+                <a href="#pageshoes">
+                <img src="images/shoes/dress_shoes/c15fwd302_blk_1_220_265.png" style="width:100%"></a>
+                <div class="text">DRESS SHOES</div>
+            </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+</div>
+<!---->
+
+<!---->
+<div data-role="page" id="pagelogin" data-theme="b" data-title="PREJUDICE - LOGIN">
+    <div data-role="header">
+        <h1>LOGIN</h1>
+    </div>
+        <form method="post" action="check.php">
+            <div class="ui-field-contain">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" />
+                <br/>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" />
+                <br/>
+                <!--
+                <label for="log">Keep me logged in</label>
+                <input type="checkbox" name="login" id="log" value="1" data-mini="true">
+                -->
+            </div>
+            <a href="#pagemain" data-inline="true" class="ui-btn">Log In</a>
+            <a href="#pagesignup" data-inline="true" class="ui-btn">Sign Up</a>
+            <a href="#pagemain" data-inline="true" class="ui-btn">Continue without signing in...</a>
+        </form>
+</div>
+<!---->
+
+<!---->
+<div data-role="page" id="pagesignup" data-theme="b">
+    <div data-role="header">
+        <h1>SIGN UP</h1>
+        <a href="#pagemain" data-inline="true" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left">&#8592;</a>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <form method="post" action="check.php">
+            <div class="ui-field-contain">
+            <label for="fullname">Full name:</label>
+            <input type="text" name="fullname" id="fullname">
+            <br/>
+            <label for="password1">Password:</label>
+            <input type="password" name="username" id="username">
+            <br/>
+            <label for="password2">Retype Password:</label>
+            <input type="password" name="username" id="username">
+            <br/>
+            <label for="bday">Date of Birth:</label>
+            <input type="date" name="bday" id="bday">
+            <br/>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="Optional">
+            </div>
+            <a href="#pagemain" data-inline="true" style="width:30%" class="ui-btn">Sign Up</a>
+        </form>
+    </div>
+</div>
+<!---->
+
+<!---->
+<div data-role="page" id="pagetops" data-theme="b" data-title="PREJUDICE - TOPS">
+    <div data-role="header">
+			<h1 style="color: cornflowerblue">TOPS</h1>
+			<a href="#sidenav" data-icon="bars" data-iconpos="notext">notext</a>
+			<a href="#pagecart" data-icon="shop" id="checkout2" class="ui-btn-right ui-btn-icon-right">CART</a>
+            <!--<a href="#pagecart" id="checkout" class="ui-btn-right ui-btn ui-icon-shop ui-btn-icon-right">CART</a>-->
+		</div>
+        <div id="sidenav" data-role="panel" style="background-color: rgba(0,0,0,0.4); width= 250px; marginLeft= 250px;">
+            <ul data-role="listview">
+            <h2 style="text-align: center; color: cornflowerblue">PREJUDICE</h2>
+            <li data-icon="user"><a href="#pagelogin">LOGIN</a></li>
+            <li data-icon="home"><a href="#pagemain">HOME</a></li>
+            <br/>
+            <li data-role="list-divider" style="background-color: #717171;">CATEGORIES</li>
+	        <li data-role="collapsible" data-inset="false" data-iconpos="right">
+	           <li data-icon="tag"><a href="#pagetops">TOPS</a></li>
+	        </li>
+	        <li data-role="collapsible" data-inset="false" data-iconpos="right">
+              <li data-icon="tag"><a href="#pagebottoms">BOTTOMS</a></li>
+	        </li>
+	        <li data-role="collapsible" data-inset="false" data-iconpos="right">
+	            <li data-icon="tag"><a href="#pagesuits">SUITS</a></li>
+	        </li>
+            <li data-role="collapsible" data-inset="false" data-iconpos="right">
+	            <li data-icon="tag"><a href="#pageshoes">SHOES</a></li>
+	        </li>
+            <div data-role="footer">
+            <h2 style="color: #818181;">&copy; MALCOLM SIONI</h2>
+            </div>
+        </ul>
+		</div>
+    <div data-role="content">
+			<ul data-role="listview" data-inset="true">
+					<li style="text-align:center; background-color: #818181" data-role="divider">T-SHIRTS</li>
+					<div class="ui-grid-a">
+							<div class="ui-block-a">
+									<br/>
+									<img src="images/tops/t-shirts/c16st316_nav_1_220_265.png" width="80%">
+									<p>$29.99 AUD<a class="buy" data-price="29.99" data-description="t-shirts">
+									<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+							</div>
+							<div class="ui-block-b">
+									<br/>
+									<img src="images/tops/t-shirts/c16st327_ice_1_220_265.png" width="80%">
+									<p>$29.99 AUD<a class="buy" data-price="29.99" data-description="t-shirts">
+									<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+							</div>
+					</div>
+					<div class="ui-grid-a">
+							<div class="ui-block-a">
+									<br/>
+									<img src="images/tops/t-shirts/c16st331_blk_1_220_265.png" width="80%">
+									<p>$29.99 AUD<a class="buy" data-price="29.99" data-description="t-shirts">
+									<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+							</div>
+							<div class="ui-block-b">
+									<br/>
+									<img src="images/tops/t-shirts/c16st333_wht_1_220_265.png" width="80%">
+									<p>$29.99 AUD<a class="buy" data-price="29.99" data-description="t-shirts">
+									<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+							</div>
+					</div>
+			</ul>
+        <ul data-role="listview" data-inset="true">
+            <li style="text-align:center; background-color: #818181" data-role="divider">JACKETS</li>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <br/>
+                    <img src="images/tops/jackets/c16cj109_blk_1_220_265.png" width="80%">
+										<p>$59.99 AUD<a class="buy" data-price="59.99" data-description="jackets">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+                <div class="ui-block-b">
+                    <br/>
+                    <img src="images/tops/jackets/c16jk103_gry_1l_220_265.png" width="80%">
+										<p>$59.99 AUD<a class="buy" data-price="59.99" data-description="jackets">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+            </div>
+        </ul>
+        <ul data-role="listview" data-inset="true">
+            <li style="text-align:center; background-color: #818181" data-role="divider">HOODIES</li>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <br/>
+                    <img src="images/tops/hoodies/c15ho100_1_220_265.png" width="80%">
+
+										<p>$39.99 AUD<a class="buy" data-price="39.99" data-description="hoodies">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+                <div class="ui-block-b">
+                    <br/>
+                    <img src="images/tops/hoodies/c15kl103_den_1_220_265.png" width="80%">
+										<p>$39.99 AUD<a class="buy" data-price="39.99" data-description="hoodies">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <br/>
+                    <img src="images/tops/hoodies/c15kl104_cha_1_220_265.png" width="80%">
+										<p>$39.99 AUD<a class="buy" data-price="39.99" data-description="hoodies">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+            </div>
+        </ul>
+        <ul data-role="listview" data-inset="true">
+            <li style="text-align:center; background-color: #818181" data-role="divider">POLOS</li>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <br/>
+                    <img src="images/tops/polos/c14po305_nav_1_220_265.png" width="80%">
+										<p>$12.99 AUD<a class="buy" data-price="12.99" data-description="polos">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+                <div class="ui-block-b">
+                    <br/>
+                    <img src="images/tops/polos/c14po310_ice_1_220_265.png" width="80%">
+										<p>$12.99 AUD<a class="buy" data-price="12.99" data-description="polos">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <br/>
+                    <img src="images/tops/polos/c15po301_cha_1_220_265.png" width="80%">
+										<p>$12.99 AUD<a class="buy" data-price="12.99" data-description="polos">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+                <div class="ui-block-b">
+                    <br/>
+                    <img src="images/tops/polos/c16po300_blk_1_220_265.png" width="80%">
+										<p>$12.99 AUD<a class="buy" data-price="12.99" data-description="polos">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+            </div>
+        </ul>
+    </div>
+</div>
+<!---->
+
+<!---->
+<div data-role="page" id="pagebottoms" data-theme="b" data-title="PREJUDICE - BOTTOMS">
+     <div data-role="header">
+			<h1 style="color: cornflowerblue">BOTTOMS</h1>
+			<a href="#sidenav" data-icon="bars" data-iconpos="notext">notext</a>
+			<a href="#pagecart" data-icon="shop" id="checkout3" class="ui-btn-right ui-btn-icon-right">CART</a>
+		</div>
+        <div id="sidenav" data-role="panel" style="background-color: rgba(0,0,0,0.4); width= 250px; marginLeft= 250px;">
+            <ul data-role="listview">
+            <h2 style="text-align: center; color: cornflowerblue">PREJUDICE</h2>
+            <li data-icon="user"><a href="#pagelogin">LOGIN</a></li>
+            <li data-icon="home"><a href="#pagemain">HOME</a></li>
+            <br/>
+            <li data-role="list-divider" style="background-color: #717171;">CATEGORIES</li>
+	        <li data-role="collapsible" data-inset="false" data-iconpos="right">
+	           <li data-icon="tag"><a href="#pagetops">TOPS</a></li>
+	        </li>
+	        <li data-role="collapsible" data-inset="false" data-iconpos="right">
+                <li data-icon="tag"><a href="#pagebottoms">BOTTOMS</a></li>
+	        </li>
+	        <li data-role="collapsible" data-inset="false" data-iconpos="right">
+	            <li data-icon="tag"><a href="#pagesuits">SUITS</a></li>
+	        </li>
+            <li data-role="collapsible" data-inset="false" data-iconpos="right">
+	            <li data-icon="tag"><a href="#pageshoes">SHOES</a></li>
+	        </li>
+            <div data-role="footer">
+            <h2 style="color: #818181;">&copy; MALCOLM SIONI</h2>
+            </div>
+        </ul>
+		</div>
+    <div data-role="content">
+        <ul data-role="listview" data-inset="true">
+            <li style="text-align:center; background-color: #818181" data-role="divider">DENIMS</li>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <br/>
+                    <img src="images/bottoms/denims/c15de300_blk_1_220_265.png" width="80%">
+										<p>$69.99 AUD<a class="buy" data-price="69.99" data-description="denims">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+                <div class="ui-block-b">
+                    <br/>
+                    <img src="images/bottoms/denims/c15de301_blk_1_220_265.png" width="80%">
+										<p>$69.99 AUD<a class="buy" data-price="69.99" data-description="denims">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <br/>
+                    <img src="images/bottoms/denims/c15de317_ltb_1_220_265.png" width="80%">
+										<p>$69.99 AUD<a class="buy" data-price="69.99" data-description="denims">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+                <div class="ui-block-b">
+                    <br/>
+                    <img src="images/bottoms/denims/c16de302_ink_1_220_265.png" width="80%">
+										<p>$69.99 AUD<a class="buy" data-price="69.99" data-description="denims">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+            </div>
+        </ul>
+        <ul data-role="listview" data-inset="true">
+            <li style="text-align:center; background-color: #818181" data-role="divider">DRESS PANTS</li>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <br/>
+                    <img src="images/bottoms/dress_pants/c16db101s_blk_1_220_265.png" width="80%">
+										<p>$59.99 AUD<a class="buy" data-price="59.99" data-description="dress pants">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+                <div class="ui-block-b">
+                    <br/>
+                    <img src="images/bottoms/dress_pants/c16db102s_blu_1_220_265.png" width="80%">
+										<p>$59.99 AUD<a class="buy" data-price="59.99" data-description="dress pants">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+                <div class="ui-block-b">
+                    <br/>
+                    <img src="images/bottoms/dress_pants/c16db300sk_blu_1_220_265.png" width="80%">
+										<p>$59.99 AUD<a class="buy" data-price="59.99" data-description="dress pants">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+                <div class="ui-block-b">
+                    <br/>
+                    <img src="images/bottoms/dress_pants/c16db301s_lg_1_220_265.png" width="80%">
+										<p>$59.99 AUD<a class="buy" data-price="59.99" data-description="dress pants">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+            </div>
+        </ul>
+        <ul data-role="listview" data-inset="true">
+            <li style="text-align:center; background-color: #818181" data-role="divider">SHORTS</li>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <br/>
+                    <img src="images/bottoms/shorts/c14sh303_win_1_220_265.png" width="80%">
+										<p>$49.99 AUD<a class="buy" data-price="49.99" data-description="shorts">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+                <div class="ui-block-b">
+                    <br/>
+                    <img src="images/bottoms/shorts/c14sh303_blk_1_220_265.png" width="80%">
+										<p>$49.99 AUD<a class="buy" data-price="49.99" data-description="shorts">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+                <div class="ui-block-b">
+                    <br/>
+                    <img src="images/bottoms/shorts/c14sh303_cam_1_220_265.png" width="80%">
+										<p>$49.99 AUD<a class="buy" data-price="49.99" data-description="shorts">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+                <div class="ui-block-b">
+                    <br/>
+                    <img src="images/bottoms/shorts/c16sh300_ltb_1_220_265.png" width="80%">
+										<p>$49.99 AUD<a class="buy" data-price="49.99" data-description="shorts">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+            </div>
+        </ul>
+        <ul data-role="listview" data-inset="true">
+            <li style="text-align:center; background-color: #818181" data-role="divider">JOGGERS</li>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <br/>
+                    <img src="images/bottoms/joggers/c15de200_dkb_1_220_265.png" width="80%">
+										<p>$69.99 AUD<a class="buy" data-price="69.99" data-description="joggers">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+                <div class="ui-block-b">
+                    <br/>
+                    <img src="images/bottoms/joggers/c15de313_blu_1_220_265.png" width="80%">
+										<p>$69.99 AUD<a class="buy" data-price="69.99" data-description="joggers">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <br/>
+                    <img src="images/bottoms/joggers/c15de314_blk_1_220_265.png" width="80%">
+										<p>$69.99 AUD<a class="buy" data-price="69.99" data-description="joggers">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+                <div class="ui-block-b">
+                    <br/>
+                    <img src="images/bottoms/joggers/c15de400_ltb_1_220_265.png" width="80%">
+										<p>$69.99 AUD<a class="buy" data-price="69.99" data-description="joggers">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+            </div>
+        </ul>
+    </div>
+</div>
+<!---->
+
+<!---->
+<div data-role="page" id="pagesuits" data-theme="b" data-title="PREJUDICE - SUITS">
+    <div data-role="header">
+			<h1 style="color: cornflowerblue">SUITS</h1>
+			<a href="#sidenav" data-icon="bars" data-iconpos="notext">notext</a>
+      <a href="#pagecart" data-icon="shop" id="checkout4" class="ui-btn-right ui-btn-icon-right">CART</a>
+		</div>
+        <div id="sidenav" data-role="panel" style="background-color: rgba(0,0,0,0.4); width= 250px; marginLeft= 250px;">
+            <ul data-role="listview">
+            <h2 style="text-align: center; color: cornflowerblue">PREJUDICE</h2>
+            <li data-icon="user"><a href="#pagelogin">LOGIN</a></li>
+            <li data-icon="home"><a href="#pagemain">HOME</a></li>
+            <br/>
+            <li data-role="list-divider" style="background-color: #717171;">CATEGORIES</li>
+	        <li data-role="collapsible" data-inset="false" data-iconpos="right">
+	           <li data-icon="tag"><a href="#pagetops">TOPS</a></li>
+	        </li>
+	        <li data-role="collapsible" data-inset="false" data-iconpos="right">
+              <li data-icon="tag"><a href="#pagebottoms">BOTTOMS</a></li>
+	        </li>
+	        <li data-role="collapsible" data-inset="false" data-iconpos="right">
+	            <li data-icon="tag"><a href="#pagesuits">SUITS</a></li>
+	        </li>
+            <li data-role="collapsible" data-inset="false" data-iconpos="right">
+	            <li data-icon="tag"><a href="#pageshoes">SHOES</a></li>
+	        </li>
+            <div data-role="footer">
+            <h2 style="color: #818181;">&copy; MALCOLM SIONI</h2>
+            </div>
+        </ul>
+		</div>
+    <div data-role="content">
+        <ul data-role="listview" data-inset="true">
+            <li style="text-align:center; background-color: #818181" data-role="divider">SUIT JACKETS</li>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <br/>
+                    <img src="images/suits/suit_jackets/c15sj304_ink_1_220_265.png" width="80%">
+										<p>$149.99 AUD<a class="buy" data-price="149.99" data-description="suit jackets">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+                <div class="ui-block-b">
+                    <br/>
+                    <img src="images/suits/suit_jackets/c15sj330c_blk_1_220_265.png" width="80%">
+										<p>$149.99 AUD<a class="buy" data-price="149.99" data-description="suit jackets">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <br/>
+                    <img src="images/suits/suit_jackets/c16sj100_nav_1_220_265.png" width="80%">
+										<p>$149.99 AUD<a class="buy" data-price="149.99" data-description="suit jackets">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+                <div class="ui-block-b">
+                    <br/>
+                    <img src="images/suits/suit_jackets/c16sj104_ltb_1_220_265.png" width="80%">
+										<p>$149.99 AUD<a class="buy" data-price="149.99" data-description="suit jackets">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+            </div>
+        </ul>
+        <ul data-role="listview" data-inset="true">
+            <li style="text-align:center; background-color: #818181" data-role="divider">SUIT PANTS</li>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <br/>
+                    <img src="images/suits/suit_pants/c13db301c_cha_1_220_265.png" width="80%">
+										<p>$29.99 AUD<a class="buy" data-price="29.99" data-description="suit pants">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+                <div class="ui-block-b">
+                    <br/>
+                    <img src="images/suits/suit_pants/c14db302s_stl_1_220_265.png" width="80%">
+										<p>$29.99 AUD<a class="buy" data-price="29.99" data-description="suit pants">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+                <div class="ui-block-b">
+                    <br/>
+                    <img src="images/suits/suit_pants/c15db401s_stl_1_220_265.png" width="80%">
+										<p>$29.99 AUD<a class="buy" data-price="29.99" data-description="suit pants">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+            </div>
+        </ul>
+        <ul data-role="listview" data-inset="true">
+            <li style="text-align:center; background-color: #818181" data-role="divider">WAISTCOATS</li>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <br/>
+                    <img src="images/suits/waistcoats/c12wc201_chr_1_220_265.png" width="80%">
+										<p>$59.99 AUD<a class="buy" data-price="59.99" data-description="waistcoats">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+                <div class="ui-block-b">
+                    <br/>
+                    <img src="images/suits/waistcoats/c15wc320_cha_1_220_265.png" width="80%">
+										<p>$59.99 AUD<a class="buy" data-price="59.99" data-description="waistcoats">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+                <div class="ui-block-b">
+                    <br/>
+                    <img src="images/suits/waistcoats/c16wc102_blu_1_220_265.png" width="80%">
+										<p>$59.99 AUD<a class="buy" data-price="59.99" data-description="waistcoats">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+                <div class="ui-block-b">
+                    <br/>
+                    <img src="images/suits/waistcoats/c16wc302_sil_1_220_265.png" width="80%">
+										<p>$59.99 AUD<a class="buy" data-price="59.99" data-description="waistcoats">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+            </div>
+        </ul>
+    </div>
+</div>
+<!---->
+
+<!---->
+<div data-role="page" id="pageshoes" data-theme="b" data-title="PREJUDICE - SHOES">
+    <div data-role="header">
+			<h1 style="color: cornflowerblue">SHOES</h1>
+			<a href="#sidenav" data-icon="bars" data-iconpos="notext">notext</a>
+      <a href="#pagecart" data-icon="shop" id="checkout5" class="ui-btn-right ui-btn-icon-right">CART</a>
+    </div>
+    <div id="sidenav" data-role="panel" style="background-color: rgba(0,0,0,0.4); width= 250px; marginLeft= 250px;">
+            <ul data-role="listview">
+            <h2 style="text-align: center; color: cornflowerblue">PREJUDICE</h2>
+            <li data-icon="user"><a href="#pagelogin">LOGIN</a></li>
+            <li data-icon="home"><a href="#pagemain">HOME</a></li>
+            <br/>
+            <li data-role="list-divider" style="background-color: #717171;">CATEGORIES</li>
+	        <li data-role="collapsible" data-inset="false" data-iconpos="right">
+	           <li data-icon="tag"><a href="#pagetops">TOPS</a></li>
+	        </li>
+	        <li data-role="collapsible" data-inset="false" data-iconpos="right">
+              <li data-icon="tag"><a href="#pagebottoms">BOTTOMS</a></li>
+	        </li>
+	        <li data-role="collapsible" data-inset="false" data-iconpos="right">
+	            <li data-icon="tag"><a href="#pagesuits">SUITS</a></li>
+	        </li>
+            <li data-role="collapsible" data-inset="false" data-iconpos="right">
+	            <li data-icon="tag"><a href="#pageshoes">SHOES</a></li>
+	        </li>
+            <div data-role="footer">
+            <h2 style="color: #818181;">&copy; MALCOLM SIONI</h2>
+            </div>
+        </ul>
+		</div>
+    <div data-role="content">
+        <ul data-role="listview" data-inset="true">
+            <li style="text-align:center; background-color: #818181" data-role="divider">CASUAL SHOES</li>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <br/>
+                    <img src="images/shoes/casual_shoes/c14fwc300_nav_1_220_265.png" width="80%">
+										<p>$49.99 AUD<a class="buy" data-price="49.99" data-description="casual shoes">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+                <div class="ui-block-b">
+                    <br/>
+                    <img src="images/shoes/casual_shoes/c15fwc107_den_1_220_265.png" width="80%">
+										<p>$49.99 AUD<a class="buy" data-price="49.99" data-description="casual shoes">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <br/>
+                    <img src="images/shoes/casual_shoes/c16fwc100_blk_1_220_265.png" width="80%">
+										<p>$49.99 AUD<a class="buy" data-price="49.99" data-description="casual shoes">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+                <div class="ui-block-b">
+                    <br/>
+                    <img src="images/shoes/casual_shoes/c16fwc200_nav_1_220_265.png" width="80%">
+										<p>$49.99 AUD<a class="buy" data-price="49.99" data-description="casual shoes">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+                <div class="ui-block-b">
+                    <li id="price44"></li>
+                    <br/>
+                    <img src="images/shoes/casual_shoes/c16fwc304_cha_1_220_265.png" width="80%">
+										<p>$49.99 AUD<a class="buy" data-price="49.99" data-description="casual shoes">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+            </div>
+        </ul>
+        <ul data-role="listview" data-inset="true">
+            <li style="text-align:center; background-color: #818181" data-role="divider">DRESS SHOES</li>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <br/>
+                    <img src="images/shoes/dress_shoes/c15fwd302_blk_1_220_265.png" width="80%">
+										<p>$59.99 AUD<a class="buy" data-price="59.99" data-description="dress shoes">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+                <div class="ui-block-b">
+                    <br/>
+                    <img src="images/shoes/dress_shoes/c15fwd302_cho_1_220_265.png" width="80%">
+										<p>$59.99 AUD<a class="buy" data-price="59.99" data-description="dress shoes">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+                <div class="ui-block-b">
+                    <br/>
+                    <img src="images/shoes/dress_shoes/c15fwd302_tan_1_220_265.png" width="80%">
+										<p>$59.99 AUD<a class="buy" data-price="59.99" data-description="dress shoes">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+                <div class="ui-block-b">
+                    <br/>
+                    <img src="images/shoes/dress_shoes/c16fwd200_blk_1_220_265.png" width="80%">
+										<p>$59.99 AUD<a class="buy" data-price="59.99" data-description="dress shoes">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+                <div class="ui-block-b">
+                    <br/>
+                    <img src="images/shoes/dress_shoes/c16fwd305_blk_1_220_265.png" width="80%">
+										<p>$59.99 AUD<a class="buy" data-price="59.99" data-description="dress shoes">
+										<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+                </div>
+            </div>
+        </ul>
+    </div>
+</div>
+<!---->
+
+<!---->
+<div data-role="page" id="pagecart" data-theme="b" data-title="PREJUDICE - CART">
+    <div data-role="header">
+			<h1 style="color: cornflowerblue">CART</h1>
+			<a href="#sidenav" data-icon="bars" data-iconpos="notext">notext</a>
+    </div>
+    <div id="sidenav" data-role="panel" style="background-color: rgba(0,0,0,0.4); width= 250px; marginLeft= 250px;">
+            <ul data-role="listview">
+            <h2 style="text-align: center; color: cornflowerblue">PREJUDICE</h2>
+            <li data-icon="user"><a href="#pagelogin">LOGIN</a></li>
+            <li data-icon="home"><a href="#pagemain">HOME</a></li>
+            <br/>
+            <li data-role="list-divider" style="background-color: #717171;">CATEGORIES</li>
+	        <li data-role="collapsible" data-inset="false" data-iconpos="right">
+	           <li data-icon="tag"><a href="#pagetops">TOPS</a></li>
+	        </li>
+	        <li data-role="collapsible" data-inset="false" data-iconpos="right">
+                <li data-icon="tag"><a href="#pagebottoms">BOTTOMS</a></li>
+	        </li>
+	        <li data-role="collapsible" data-inset="false" data-iconpos="right">
+	            <li data-icon="tag"><a href="#pagesuits">SUITS</a></li>
+	        </li>
+            <li data-role="collapsible" data-inset="false" data-iconpos="right">
+	            <li data-icon="tag"><a href="#pageshoes">SHOES</a></li>
+	        </li>
+            <div data-role="footer">
+            <h2 style="color: #818181;">&copy; MALCOLM SIONI</h2>
+            </div>
+        </ul>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" data-inset="true">
+            <li style="text-align:center; background-color: #818181" id="cart1">TOTAL CART</li>
+        </ul>
+        <ul data-role="listview" data-inset="true">
+            <li style="text-align:center; background-color: #818181" data-role="divider">DELIVERY DETAILS</li>
+            <div class="ui-grid-a ui-responsive">
+                <div class="ui-block-a">
+                    <br/>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" />
+                    <br/>
+                    <label for="phone">Phone:</label>
+                    <input type="number" name="phone" id="phone" />
+                    <br/>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Optional" />
+                		<br/>
+                </div>
+                <div class="ui-block-b">
+                    <label for="snumber">Street Number:</label>
+                    <input type="number" name="snumber" id="snumber" />
+										<br/>
+                    <label for="street">Street:</label>
+                    <input type="text" name="street" id="street" />
+										<br/>
+                    <label for="postcode">Postcode:</label>
+                    <input type="number" name="postcode" id="postcode" style="width:50%"/>
+										<a href="#confirmation" data-role="button" id="order" style="position:absolute; right:3%">CHECKOUT</a>
+                </div>
+            </div>
+        </ul>
+    </div>
+</div>
+<div id="confirmation" data-role="page"	data-title="PREJUDICE - RECEIPT">
+	<div data-role="header">
+		<h1>ORDER RECEIPT</h1>
+	</div>
+	<div data-role="content">
+		<h4>Total Cart:</h4>
+		<div id="cart2"></div>
+		<div id="items"></div>
+		<br/>
+		<h4>Order Confirmation:</h4>
+		<div id="name-info"></div>
+					<br/>
+		<div id="phone-info"></div>
+					<br/>
+		<div id="email-info"></div>
+					<br/>
+		<div id="snumber-info"></div>
+					<br/>
+		<div id="street-info"></div>
+					<br/>
+		<div id="postcode-info"></div>
+	</div>
+	<br/>
+	<div data-role="footer">
+		<a href="#pagecart" style="position:relative; left:0%; width:50%" data-role="button">BACK</a>
+		<a href="#" style="position:absolute; right:0%; width:50%" data-role="button">PRINT</a>
+	</div>
+	</div>
+<!---->
+
+<!---->
+<div data-role="page" id="pagefive">
+    <div data-role="header">
+        <h1>Sign Up</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+        <p>Goodbye!</p>
+        <a href="#pageone" class="ui-btn">Go to Page One</a>
+    </div>
+    <div data-role="footer">
+        <h1>Footer Text</h1>
+    </div>
+</div>
+<!---->
+
+<!---->
+</body>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+		for (i = 0; i < slides.length; i++) {
+			 slides[i].style.display = "none";
+		}
+		slideIndex++;
+		if (slideIndex> slides.length) {slideIndex = 1}
+		for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex-1].style.display = "block";
+		dots[slideIndex-1].className += " active";
+		setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+function Product(description, price){
+	this.description = description;
+	this.price = price;
+}
+
+var cart = new Array();
+
+$(document).bind('pageinit', function(ev){
+
+	$('.buy').on('click', function(){
+	var p = $(this).attr('data-price');
+	var d = $(this).attr('data-description');
+
+	var prod = new Product(d, p);
+	cart.push(prod);
+
+	var total = 0;
+
+	for(i in cart){
+		total += parseFloat(cart[i].price);
+	}
+
+	$('#checkout1').html('$' + total.toFixed(2));
+	$('#checkout2').html('$' + total.toFixed(2));
+	$('#checkout3').html('$' + total.toFixed(2));
+	$('#checkout4').html('$' + total.toFixed(2));
+	$('#checkout5').html('$' + total.toFixed(2));
+
+	var j = JSON.stringify(cart);
+	localStorage.setItem('cart', j);
+});
+
+	//search db for pokemon and display in the list
+	$.get('prejudice.php', function(data){
+		$('#price').html(data);
+		$('#price').listview('refresh');
+
+		$('#item').html(data);
+		$('#item').listview('refresh');
+		});
+});
+
+$(document).bind('pageshow', function(ev){
+	var j = localStorage.getItem('cart');
+	var arr = JSON.parse(j);
+
+	var total = 0;
+
+	for(i in arr){
+		total += parseFloat(arr[i].price);
+	}
+
+	$('#cart1').html('<li>TOTAL CART: $' + total.toFixed(2) + ' AUD</p>');
+	$('#cart2').html('<p>Your total cart is: ' + total.toFixed(2) + ' AUD</p>');
+	$('#items').html('<p>Items: ' + arr.length + '</p>');
+
+	$('#order').on('click', function(){
+			var cart = $('#cart').val();
+			var name = $('#name').val();
+			var phone = $('#phone').val();
+			var email = $('#email').val();
+			var snumber = $('#snumber').val();
+			var street = $('#street').val();
+			var postcode = $('#postcode').val();
+
+			localStorage.setItem('cart-data', cart);
+			localStorage.setItem('name-data', name);
+			localStorage.setItem('phone-data', phone);
+			localStorage.setItem('email-data', email);
+			localStorage.setItem('snumber-data', snumber);
+			localStorage.setItem('street-data', street);
+			localStorage.setItem('postcode-data', postcode);
+	});
+
+	if(ev.target.id == 'confirmation'){
+			$('#cart-info').html('Your total cart is: $' + localStorage.getItem('cart-data') + ' ' + 'AUD');
+			$('#name-info').html('Name: ' + localStorage.getItem('name-data'));
+			$('#phone-info').html('Phone: ' + localStorage.getItem('phone-data'));
+			$('#email-info').html('Email: ' + localStorage.getItem('email-data'));
+			$('#snumber-info').html('Street Number: ' + localStorage.getItem('snumber-data'));
+			$('#street-info').html('Street: ' + localStorage.getItem('street-data'));
+			$('#postcode-info').html('Postcode: ' + localStorage.getItem('postcode-data'));
+		}
+});
+</script>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="mobile-web-app-capable" content="yes" />
+	
+	<title> </title>
+
+	<link rel="shortcut icon" href="_/css/images/apple-touch-icon.ico" type="image/vnd.microsoft.icon">
+	<link rel="icon" href="_/css/images/apple-touch-icon.ico" type="image/vnd.microsoft.icon">		
+	<link rel="apple-touch-icon" href="_/css/images/apple-touch-icon.ico"/>
+	<link rel="apple-touch-icon-precomposed" href="_/css/apple-touch-icon.ico"/>
+
+	<link type="text/css" rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+
+	<script src="_/js/script.js"></script>
+	<link type="text/css" rel="stylesheet" href="_/css/style.css" />
+</head>
+<body>
+	<div id="home" data-role="page"	data-title="Home">
+		<div data-role="header">
+			<h1 id="cart-status"></h1>			
+			<a href="#">Home</a>			
+			<a id="checkout" href="#checkout">Checkout</a>			
+		</div>
+		<div data-role="content">
+			<div class="ui-grid-b">
+				<div class="ui-block-a">
+					<img src="images/massive-attack_pray-for-rain.jpg" alt="" />
+					<br />
+					<button data-inline="true" data-product-name="massive attack - pray for rain" data-product-price="2.99">Buy</button>
+				</div>
+				<div class="ui-block-b">
+					<img src="images/maya-jane-coles_everything.jpg" alt="" />
+					<br />
+					<button data-inline="true" data-product-name="maya jones - coles everything" data-product-price="1.99">Buy</button>
+				</div>
+				<div class="ui-block-c">
+					<img src="images/miike-snow_paddling-out.jpg" alt="" />
+					<br />
+					<button data-inline="true" data-product-name="miike snow - paddling out" data-product-price="0.99">Buy</button>
+				</div>
+				<div class="ui-block-a">
+					<img src="images/ms-mr_bones.jpg" alt="" />
+					<br />
+					<button data-inline="true" data-product-name="ms mr - bones" data-product-price="2.50">Buy</button>
+				</div>
+				<div class="ui-block-b">
+					<img src="images/nine-inch-nails_copy-of-a.jpg" alt="" />
+					<br />
+					<button data-inline="true" data-product-name="nine inch nails - copy of a" data-product-price="3.99">Buy</button>
+				</div>
+				<div class="ui-block-c">
+					<img src="images/totally-enormous-extinct-dinosaurs_tapes-and-money.jpg" alt="" />
+					<br />
+					<button data-inline="true" data-product-name="totally enourmous extinct dinosaurs - tapes and money" data-product-price="0.50">Buy</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div id="checkout" data-role="page"	data-title="Checkout">
+		<div data-role="header">
+			<h1></h1>
+		</div>
+		<div data-role="content">
+			<div id="cart-info"></div>
+		</div>
+	</div>
+</body>
+</html>

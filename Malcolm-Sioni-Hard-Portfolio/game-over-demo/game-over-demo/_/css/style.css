@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+
+#tap{
+	padding:			5em;
+}
+
+#gameover{
+	opacity:			0;
+	position:			absolute;
+
+}

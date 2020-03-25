@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+
+#home
+{
+    background-image: url('../css/images/field.png');
+    background-size: 100% 93%;
+	height: 90%;
+	position: absolute;
+
+}
+
+
+#player
+{
+    position: absolute;
+	width: 8em;
+	left: 32%;
+	bottom: 10%;
+}
+
+#puck
+{
+    position: absolute;
+	width: 8em;
+	left:32%;
+	bottom: 46%;
+}
+

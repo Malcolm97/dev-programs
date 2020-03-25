@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+
+.ui-page { 
+	background-color:		black;
+}
+
+#goodguy{
+	position: 				absolute;
+	top:					0px;
+	left:					0px;
+	z-index:				1;
+}
+
+#base{
+	position: 				absolute;
+	z-index:				2;	
+}
+
+#message{
+	color:					white;
+}

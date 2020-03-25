@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+
+#timer
+{
+    position: relative;
+    text-align: center;
+    border: 10px solid black;
+    font-size: 500%;
+}
+
+
+#settime
+{
+}
+
+
+
+
+

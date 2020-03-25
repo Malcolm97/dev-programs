@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+
+body,div[data-role="page"]{
+	height:									100%;
+}
+
+#road{
+	height:									100%;
+	background-image:						url('../../images/road.jpg');
+	background-repeat:						repeat-y;
+	background-position:					0px 0px;
+	background-size:						100% 100%;
+}
+
+#go-faster{
+	position:								fixed;
+	bottom:									0.5em;
+	right:									0.5em;
+}
+
+#red-car{
+	position:								absolute;
+	bottom:									1em;
+	left:									50%;
+}

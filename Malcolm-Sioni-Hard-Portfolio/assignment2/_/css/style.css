@@ -1,0 +1,50 @@
+@CHARSET "UTF-8";
+
+#home
+{
+  background: url(../../images/wallpaper.jpg); 
+}
+
+#playbtn
+{
+    position:   fixed; 
+    float:      right; 
+    left:       85%; 
+    top:        1%;
+}
+
+#menudialog
+{
+    position:   absolute; 
+    float:      right;
+    top:        -8%;
+}
+
+#resumedialog
+{
+    left:       25%;
+    top:        2em;
+}
+
+#followbtn
+{
+    position:   absolute;
+    left:       33%;
+}
+
+#player
+{
+    position:   absolute;
+	bottom:     1em;
+	left:       45%;
+    width:      3em;
+}
+
+.virus1, .virus2, .virus3, .health
+{
+	position: 	absolute;
+	top:		-200px;
+    width:      3.5em;
+}
+
+

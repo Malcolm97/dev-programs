@@ -1,0 +1,42 @@
+@CHARSET "UTF-8";
+
+#home
+{
+    background-color: white;
+}
+
+
+.center {
+  width: 100%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute; /*or fixed*/
+  left: 50%;
+  top: 50%;
+  text-align: center;
+}
+
+#card_num
+{
+    position: absolute;
+	width: 10em;
+	left: 25%;
+	top: 45%;
+    font-size: 20px;  
+    
+}
+
+#card
+{
+    position: absolute;
+	width: 10em;
+	left: 25%;
+	top: 25%;
+    font-size: 20px;
+}
+
+#shuffle
+{
+    font-size: 16px;
+}
+

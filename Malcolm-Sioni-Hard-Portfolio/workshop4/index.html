@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<title></title>
+
+	<link rel="shortcut icon" href="_/css/images/apple-touch-icon.ico" type="image/vnd.microsoft.icon">
+	<link rel="icon" href="_/css/images/apple-touch-icon.ico" type="image/vnd.microsoft.icon">
+	<link rel="apple-touch-icon" href="_/css/images/apple-touch-icon.ico"/>
+	<link rel="apple-touch-icon-precomposed" href="_/css/apple-touch-icon.ico"/>
+
+	<!-- custom themes go here -->
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+
+	<script src="_/js/script.js"></script>
+	<link type="text/css" rel="stylesheet" href="_/css/style.css" />
+</head>
+<body>
+	<div id="home" data-role="page"	data-theme="b" data-title="Phone Book">
+		<div data-role="header">
+			<h1>Phone Book</h1>
+		</div>
+
+		<div data-role="content">
+			<input type="text" name="first-name" id="first-name" placeholder="First Name"/>
+			<input type="text" name="last-name" id="last-name" placeholder="Last Name"/>
+			<input type="number" name="phone" id="phone" placeholder="Phone Number"/>
+
+			<a href="#pagesearch" id="add-contact" class="ui-btn">Add to Contacts</a>
+		</div>
+	</div>
+
+	<div id="pagesearch" data-role="page" data-theme="b" data-title="Phone Book - Search">
+		<div data-role="header">
+			<h1>Search Contact</h1>
+
+		</div>
+		<div data-role="content">
+			<input type="text" name="first-name" id="first-name" placeholder="First Name"/>
+			<input type="text" name="last-name" id="last-name" placeholder="Last Name"/>
+			<button id="search-contact">Search</button>
+			<div id="matches"></div>
+		</div>
+	</div>
+
+	<div id="pageresult" data-role="page"	data-theme="b" data-title="Phone Book - Results">
+		<div data-role="header">
+			<h1>Results</h1>
+		</div>
+
+		<div data-role="content">
+
+		</div>
+	</div>
+
+</body>
+<script>
+$(document).bind('pageinit', function(ev)
+{
+	$('#search-contact').on('click', function()
+  {
+		var fn = $('#first-name').val();
+		var ln = $('#last-name').val();
+
+		$.get('results.php', {$first-name: fn, $last-name: ln}, function(data)
+    {
+			$('#matches').html(data);
+			$('#matches').listview('refresh');
+		});
+
+	});
+});
+
+$(document).bind('pageshow', function(ev)
+{});
+</script>
+</html>

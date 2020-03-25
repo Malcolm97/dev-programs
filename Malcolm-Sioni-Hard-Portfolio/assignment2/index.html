@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<title></title>
+
+	<link rel="shortcut icon" href="_/css/images/apple-touch-icon.ico" type="image/vnd.microsoft.icon">
+	<link rel="icon" href="_/css/images/apple-touch-icon.ico" type="image/vnd.microsoft.icon">
+	<link rel="apple-touch-icon" href="_/css/images/apple-touch-icon.ico"/>
+	<link rel="apple-touch-icon-precomposed" href="_/css/apple-touch-icon.ico"/>
+
+	<!-- custom themes go here -->
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+
+	<script src="_/js/script.js"></script>
+	<link type="text/css" rel="stylesheet" href="_/css/style.css" />
+</head>
+<body>
+	<div id="home" data-role="page"	data-title="Home">
+		<div id="header" data-role="header" data-theme="c">
+            <h1 id="head"></h1>
+            
+            <button data-theme="b" data-role="main" class="play" data-inline="true" data-icon="check" data-iconpos="text" id="playbtn">Play</button>    
+            
+            <div data-role="main" id="dialog" data-overlay-theme="b" data-theme="b">
+                <a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" id="menudialog">Menu</a>
+            </div>
+        </div>            
+        
+        <div data-role="popup" id="myPopupDialog" data-theme="b">
+            <div data-role="header">
+                <h1>Menu</h1>
+            </div>
+
+            <div data-role="main" class="ui-content" data-theme="b">
+                <h3>Your Game Has Been Paused</h3>
+                <p>Note: Collision still in beta.</p>
+                
+                <iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fmalcolm.sioni&width=86&height=21&layout=button_count&size=small&show_faces=false&appId" width="86" height="21" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" id="followbtn"></iframe>
+                
+                <a href="#" id="resumedialog" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Resume</a>
+                <br/>
+                <br/>
+            </div>      
+        </div>  
+        <audio autoplay>
+            <source src="audio/winXP.mp3" type="audio/mpeg">
+        </audio>
+    </div> 
+	
+    <div data-role="content" id="game">
+        <img id="player" src="images/server.png" alt="" />
+        
+        <audio autoplay id="audio">
+            <source src="audio/winXP.mp3" type="audio/mpeg">
+        </audio>
+    </div>       
+</body>
+</html>

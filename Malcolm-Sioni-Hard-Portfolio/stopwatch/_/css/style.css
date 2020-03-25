@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+
+#timer
+{
+    position: relative;
+    text-align: center;
+    border: 10px solid black;
+    font-size: 500%;
+}
+
+#tick
+{
+    font-size: 100%;
+}
+
+#reset
+{
+    font-size: 100%;
+}
+
+#stop
+{
+    font-size: 100%;
+}
+

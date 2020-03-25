@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+
+#chopper
+{
+	position: absolute;
+	left: 0;
+}
+
+#level
+{
+	background-image: url('images/sunset.jpg');
+	background-size: 100% 100%;
+	baground-repeat: repeat-x;
+}
+
+#home,#level
+{
+	height: 90%;
+	
+}
+
+#home
+{
+	background-image: url('images/sunset.jpg');
+}

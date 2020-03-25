@@ -1,0 +1,7 @@
+@CHARSET "UTF-8";
+
+#ball{
+	position: 		absolute;
+	bottom:			1em;
+	width:			5em;
+}
