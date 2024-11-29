@@ -1,0 +1,16 @@
+SELECT
+	abcd1500_Student.first_name,
+	abcd1500_Student.last_name,
+	abcd1500_Book.title,
+	abcd1500_Bid.bid_amount
+FROM
+	abcd1500_Student,
+	abcd1500_Book,
+	abcd1500_Bid
+WHERE
+	abcd1500_Student.abcd1500_student_id = abcd1500_Bid.abcd1500_student_id
+	AND
+	abcd1500_Book.abcd1500_book_id = abcd1500_Bid.abcd1500_book_id
+	AND
+	abcd1500_Book.abcd1500_book_id = 8
+	
